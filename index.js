@@ -17,10 +17,17 @@ function currentLine (katzDeliLine){
 var string = 'The line is currently: '
 if (katzDeliLine.length>0){
   for (var i = 0; i < katzDeliLine.length; i++) {
+<<<<<<< HEAD
     string += `${i+1}. ${katzDeliLine[i]}`
     if(i<katzDeliLine.length - 1){string+=', '}
   }
   return string
+=======
+    var count = [];
+    count.push(console.log(`${i+1}. ${katzDeliLine[i]}`))
+  }
+  return `The line is currently: ${count}`
+>>>>>>> 705c660b73e835430004edfce623a72843ef4841
 } else {
   return "The line is currently empty."
 }
